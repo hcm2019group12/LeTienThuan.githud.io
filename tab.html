@@ -1,0 +1,78 @@
+<html>
+<head>
+<style>
+ul.tab{
+list-style-type: none;
+margin:0;
+padding:0;
+overflow:auto;
+background: #eee;
+border: 1px solid #ccc;
+}
+ul li{
+float: left
+}
+ul a{
+display: inline-block;
+text-decoration:none;
+padding:20px;
+font-size:30px;
+font-weight:bold
+#color:000;
+} 
+ul a:hover, .active{
+color:#fff;
+background: violet;
+}
+
+.content  {
+padding:20px;
+border: 1px solid #ccc;
+border-top:none;
+display:none;
+}
+
+ </style>
+ </head>
+<body>
+<ul class ="tab">
+<li> <a href = "#" class = "tab-link" onclick = "openTab(event,1)">Requirements</a>
+<li> <a href = "#" class = "tab-link" onclick = "openTab(event,2)">Design</a>
+<li> <a href = "#" class = "tab-link" onclick = "openTab(event,3)">Implements</a>
+</ul>
+
+<div class = "content">
+<h1> Tieu de tab 1</h1>
+<p> Noi dung tab 1</p>
+</div>
+
+<div class = "content">
+<h1> Tieu de tab 2</h1>
+<p> Noi dung tab 2</p>
+</div>
+
+<div class = "content">
+<h1> Tieu de tab 3</h1>
+<p> Noi dung tab 3</p>
+</div>
+<script type = "text/javascript">
+	function openTab(e, tabId){
+	var i;
+	var tabContent = document.getElementsByClassName("content");
+	for(i =0; i< tabContent.length;i++){
+		tabContent[i].style.display = 'none';
+}
+
+	tabContent[tabId - 1].style.display = 'block';
+
+	var tabLink = document.getElementsByClassName("tab-link");
+	for(i =0; i< tabLink.length;i++){
+		tabLink[i].className = tabLink[i].className.replace( 'active', '');
+}
+
+	event.currentTarget.className += ' active';
+	}
+</script>
+
+</body>
+</html>
