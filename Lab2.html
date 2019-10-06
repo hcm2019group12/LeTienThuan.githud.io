@@ -1,0 +1,119 @@
+<html>
+<head>
+<style>
+ul.tab{
+list-style-type: none;
+margin:0;
+padding:0;
+overflow:auto;
+background: #eee;
+border: 1px solid #ccc;
+}
+ul li{
+float: left
+}
+ul a{
+display: inline-block;
+text-decoration:none;
+padding:20px;
+font-size:30px;
+font-weight:bold
+#color:000;
+} 
+ul a:hover, .active{
+color:#fff;
+background: violet;
+}
+	a.download{
+	background-color: rgb(97, 185, 255);
+  color: white;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.content  {
+padding:20px;
+border: 1px solid #ccc;
+border-top:none;
+display:none;
+}
+
+ </style>
+ </head>
+<body>
+<ul class ="tab">
+<li> <a href = "#" class = "tab-link" onclick = "openTab(event,1)">Requirements</a>
+<li> <a href = "#" class = "tab-link" onclick = "openTab(event,2)">User Scenario</a>
+<li> <a href = "#" class = "tab-link" onclick = "openTab(event,3)">Design</a>
+<li> <a href = "#" class = "tab-link" onclick = "openTab(event,4)">Implements</a>
+</ul>
+
+<div class = "content">
+<img src = "requirements.png"/>
+</div>
+
+<div class = "content">
+<p>User Scenario</p>
+</div>
+
+<div class = "content">
+<h1> Design on paper:</h1>
+<img src = "demo1.jpg" width="600" height="400"/>
+	<br/>
+	<a class="download" href="demo1.jpg" download="demo1.jpg">Download</a>
+	<br/>
+	<img src = "demo2.jpg" width="600" height="400"/>
+	<br/>
+	<a class="download" href="demo2.jpg" download="demo2.jpg">Download</a>
+	<br/>
+	<img src = "demo3.jpg" width="600" height="400"/>
+	<br/>
+	<a class="download" href="demo3.jpg" download="demo3.jpg">Download</a>
+	<br/>
+	<br/>
+	<h1> Design on Figma:</h1>
+	<br/>
+	<br/>
+	<img src = "figma1.png" width="600" height="400"/>
+	<br/>
+	<a class="download" href="figma1.png" download="figma1.png">Download</a>
+	<br/>
+	<img src = "figma2.png" width="600" height="400"/>
+	<br/>
+	<a class="download" href="figma2.png" download="figma2.png">Download</a>
+	<br/>
+	<img src = "figma3.png" width="600" height="400"/>
+	<br/>
+	<a class="download" href="figma3.png" download="figma3.png">Download</a>
+	<br/>
+	<br/>
+	<br/>
+	<h2><center><a class="download" href="all.rar" download="all.rar">Download All</a> </center></h2>
+</div>
+
+<div class = "content">
+<center><h1> <a href="demoWeb.html">Click here</a></h1></center>
+</div>
+<script type = "text/javascript">
+	function openTab(e, tabId){
+	var i;
+	var tabContent = document.getElementsByClassName("content");
+	for(i =0; i< tabContent.length;i++){
+		tabContent[i].style.display = 'none';
+}
+
+	tabContent[tabId - 1].style.display = 'block';
+
+	var tabLink = document.getElementsByClassName("tab-link");
+	for(i =0; i< tabLink.length;i++){
+		tabLink[i].className = tabLink[i].className.replace( 'active', '');
+}
+
+	event.currentTarget.className += ' active';
+	}
+</script>
+
+</body>
+</html>
