@@ -9,6 +9,14 @@ overflow:auto;
 background: #eee;
 border: 1px solid #ccc;
 }
+ul.tabb{
+list-style-type: none;
+margin:0;
+padding:0;
+overflow:auto;
+background: #eee;
+border: 1px solid #ccc;
+}
 ul li{
 float: left
 }
@@ -22,7 +30,7 @@ font-weight:bold
 } 
 ul a:hover, .active{
 color:#fff;
-background: violet;
+background: green;
 }
 	a.download{
 	background-color: rgb(97, 185, 255);
@@ -32,6 +40,10 @@ background: violet;
   text-decoration: none;
   display: inline-block;
 }
+
+body {
+	background-image: url("aacc.jpg ");
+
 
 .content  {
 padding:20px;
@@ -43,26 +55,40 @@ display:none;
  </style>
  </head>
 <body>
+<br/>
+<br/>
+<center><img src = "header.png"/></center>
+<br/>
+<h3><center><a class="download" href="" download="#">Đăng nhập</a> </center></h3>
+
 <ul class ="tab">
-<li> <a href = "#" class = "tab-link" onclick = "openTab(event,1)">Requirements</a>
-<li> <a href = "#" class = "tab-link" onclick = "openTab(event,2)">User Scenario</a>
-<li> <a href = "#" class = "tab-link" onclick = "openTab(event,3)">Design</a>
-<li> <a href = "#" class = "tab-link" onclick = "openTab(event,4)">Implements</a>
+<li> <a href = "#" class = "tab-link" onclick = "openTab(event,1)">Giới thiệu</a>
+<li> <a href = "#" class = "tab-link" onclick = "openTab(event,2)">Các khóa học</a>
+<li> <a href = "#" class = "tab-link" onclick = "openTab(event,3)">Học phí</a>
+<li> <a href = "#" class = "tab-link" onclick = "openTab(event,4)">Hỗ trợ</a>
 </ul>
 
 <div class = "content">
-<img src = "exerciseLab2.png" width="900" height="700"/>
 </div>
 
 <div class = "content">
-<img src = "userscenario.png" />
+<al>
+<h3><a class="download" href="" download="#">Lớp 10</a></h3>
+<br/>
+<h3><a class="download" href="" download="#">Lớp 11</a></h3>
+<br/>
+<h3><a class="download" href="vatli12.html" >Lớp 12</a></h3>
+
+</al>
 </div>
 
 <div class = "content">
 </div>
 
 <div class = "content">
-<center><h1> <a href="Lab2.html">Click here</a></h1></center>
+</div>
+
+<div class = "content">
 </div>
 <script type = "text/javascript">
 	function openTab(e, tabId){
