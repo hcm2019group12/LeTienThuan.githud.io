@@ -14,6 +14,7 @@
 	<link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css">
 	<link rel="stylesheet" href="css/magnific-popup.css">
 	<link rel="stylesheet" href="vendors/nice-select/css/nice-select.css">
+	<link type = "text/css" rel= "stylesheet" href = "temp.css"/>
 	<!-- main css -->
 	<link rel="stylesheet" href="css/style.css">
 </head>
@@ -21,7 +22,52 @@
 <body>
 
 	<!--================ Start Header Area =================-->
-	
+	<br/>
+<br/>
+<center>
+<a id="p" href="#">Link 1</a>
+<a id="p" href="#">Link 2</a>
+<a id="p" href="#">Link 3</a>
+<a id="p" href="#">Link 4</a>
+</center>
+<br/>
+<br/>
+<ul class ="tab">
+<li> <a  id="defaultOpen" href = "#" class = "tab-link" onclick = "openTab(event,1)"">Requirements</a>
+<li> <a href = "#" class = "tab-link" onclick = "openTab(event,2)">Design</a>
+<li> <a href = "#" class = "tab-link" onclick = "openTab(event,3)">Implements</a>
+</ul>
+
+<div class = "content">
+<img src = "requirements.png"/>
+</div>
+
+<div class = "content">
+</div>
+
+<div class = "content">
+</div>
+
+<script type = "text/javascript">
+	function openTab(e, tabId){
+	var i;
+	var tabContent = document.getElementsByClassName("content");
+	for(i =0; i< tabContent.length;i++){
+		tabContent[i].style.display = 'none';
+}
+
+	tabContent[tabId - 1].style.display = 'block';
+
+	var tabLink = document.getElementsByClassName("tab-link");
+	for(i =0; i< tabLink.length;i++){
+		tabLink[i].className = tabLink[i].className.replace( 'active', '');
+}
+
+	event.currentTarget.className += ' active';
+	}
+document.getElementById("defaultOpen").click();
+</script>
+
 	<!--================ End Header Area =================-->
 
     <!--================ Start Banner Area =================-->
