@@ -1,0 +1,49 @@
+
+#p{
+background-color: lightblue;
+  color: red;
+  padding: 30px;
+  font-size: 40px;
+text-decoration: none;
+ font-family:Arial;
+}
+ul.tab{
+list-style-type: none;
+margin:0;
+padding:0;
+overflow:auto;
+background: #eee;
+border: 1px solid #ccc;
+}
+ul li{
+float: left
+}
+ul a{
+display: inline-block;
+text-decoration:none;
+padding:20px;
+font-size:30px;
+font-weight:bold
+#color:000;
+} 
+ul a:hover, .active{
+color:#fff;
+background: violet;
+}
+	a.download{
+	background-color: rgb(97, 185, 255);
+  color: white;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.content  {
+padding:20px;
+border: 1px solid #ccc;
+border-top:none;
+display:none;
+}
+
+
