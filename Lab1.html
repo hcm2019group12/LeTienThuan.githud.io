@@ -1,56 +1,70 @@
-<html>
+<!doctype html>
+<html lang="en">
+
 <head>
-<style>
-ul.tab{
-list-style-type: none;
-margin:0;
-padding:0;
-overflow:auto;
-background: #eee;
-border: 1px solid #ccc;
-}
-ul li{
-float: left
-}
-ul a{
-display: inline-block;
-text-decoration:none;
-padding:20px;
-font-size:30px;
-font-weight:bold
-#color:000;
-} 
-ul a:hover, .active{
-color:#fff;
-background: violet;
-}
-	a.download{
-	background-color: rgb(97, 185, 255);
-  color: white;
-  padding: 10px 15px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-}
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="icon" href="img/favicon.png" type="image/png">
+	<title>Services</title>
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="vendors/linericon/style.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/magnific-popup.css">
+	<link rel="stylesheet" href="vendors/nice-select/css/nice-select.css">
+	<!-- main css -->
+	<link rel="stylesheet" href="css/style.css">
+	<link type = "text/css" rel= "stylesheet" href = "temp.css"/>
+</head>
 
-.content  {
-padding:20px;
-border: 1px solid #ccc;
-border-top:none;
-display:none;
-}
-
- </style>
- </head>
 <body>
+
+	<!--================ Start Header Area =================-->
+	<header class="header_area">
+		<div class="main_menu">
+			<nav class="navbar navbar-expand-lg navbar-light">
+				<div class="container">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<a class="navbar-brand logo_h" href="index.html"><img src="img/logo.png" alt=""></a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+					 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+						<ul class="nav navbar-nav menu_nav justify-content-end">
+							<li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+							<li class="nav-item"><a class="nav-link" href="#">Lab 1</a></li>
+							<li class="nav-item"><a class="nav-link" href="#">Lab 2</a></li>	
+                                   		        <li class="nav-item"><a class="nav-link" href="#">Lab 3</a></li>
+							<li class="nav-item"><a class="nav-link" href="#">Lab 4</a></li>
+							<li class="nav-item"><a class="nav-link" href="#">Lab 5</a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</div>
+	</header>
+	<!--================ End Header Area =================-->
+
+
+    <!--================ Start Banner Area =================-->
+<br/>
+<br/>
+<br/>
+<br/>
 <ul class ="tab">
-<li> <a href = "#" class = "tab-link" onclick = "openTab(event,1)">Requirements</a>
+<li> <a  id="defaultOpen" href = "#" class = "tab-link" onclick = "openTab(event,1)"">Requirements</a>
 <li> <a href = "#" class = "tab-link" onclick = "openTab(event,2)">Design</a>
 <li> <a href = "#" class = "tab-link" onclick = "openTab(event,3)">Implements</a>
 </ul>
 
 <div class = "content">
-<img src = "requirements.png"/>
+Chọn 1 đối tượng bất kỳ trong thế giới thực, ví dụ như sinh viên, môn học, giảng viên,… để thiết kế trên phần mềm một chức năng trên web để thêm, sửa, xóa, tìm kiếm cho đối tượng đó.
 </div>
 
 <div class = "content">
@@ -89,8 +103,8 @@ display:none;
 </div>
 
 <div class = "content">
-<center><h1> <a href="demoWeb.html">Click here</a></h1></center>
 </div>
+
 <script type = "text/javascript">
 	function openTab(e, tabId){
 	var i;
@@ -108,7 +122,45 @@ display:none;
 
 	event.currentTarget.className += ' active';
 	}
+document.getElementById("defaultOpen").click();
 </script>
 
+    
+    <!--================ End Banner Area =================-->
+
+	<!--================ Start Features Area =================-->
+	
+    <!--================ End Features Area =================-->
+
+	<!--================ Start Testimonial Area =================-->
+	
+    <!--================ End Testimonial Area =================-->
+    
+    <!--================ Start Newsletter Area =================-->
+    
+    <!--================ End Newsletter Area =================-->
+        
+        <!--================Footer Area =================-->
+	
+    <!--================End Footer Area =================-->
+    
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/stellar.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="vendors/nice-select/js/jquery.nice-select.min.js"></script>
+    <script src="vendors/isotope/imagesloaded.pkgd.min.js"></script>
+    <script src="vendors/isotope/isotope-min.js"></script>
+    <script src="vendors/owl-carousel/owl.carousel.min.js"></script>
+    <script src="js/jquery.ajaxchimp.min.js"></script>
+    <script src="js/mail-script.js"></script>
+    <!--gmaps Js-->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
+    <script src="js/gmaps.min.js"></script>
+    <script src="js/theme.js"></script>
 </body>
+
 </html>
