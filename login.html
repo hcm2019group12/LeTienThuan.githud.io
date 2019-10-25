@@ -68,6 +68,7 @@ span.psw {
 </head>
 <body>
 
+<h2>Login Form</h2>
 
 <form action="/action_page.php" method="post">
   <div class="imgcontainer">
@@ -75,58 +76,21 @@ span.psw {
   </div>
 
   <div class="container">
-    <table style="width:100%">
-  <caption style="font-size:20px;color:black"><b>Delete an Officer</b></caption>
-  <tr style="font-size:15px;color:white;background-color: rgb(0, 0, 255);">
-    <th>ID</th>
-    <th>Name</th>
-	<th>Position</th>
-    <th>Phone</th>
-	<th>Detele</th>
-  </tr>
-  <tr>
-    <th>78421</th>
-    <th>Lê Tiến Thuận</th>
-	<th>Nhân viên</th>
-    <th>078569849</th>
-	<th><form>
-<input type="checkbox" ></form></th>
-  </tr>
-  <tr>
-    <th>48921</th>
-    <th>Nguyễn Hùng</th>
-	<th>Nhân viên</th>
-    <th>0176882164</th>
-	<th><form>
-<input type="checkbox" ></form></th>
-  </tr>
-  <tr>
-    <th>79941</th>
-    <th>Trương Ngọc Tiến</th>
-	<th>Trưởng phòng</th>
-    <th>0974566217</th>
-	<th><form>
-<input type="checkbox" ></form></th>
-  </tr>
-  <tr>
-    <th>48897</th>
-    <th>Trần Hoàng Phúc</th>
-	<th>Nhân viên</th>
-    <th>0126947825</th>
-	<th><form>
-<input type="checkbox" ></form></th>
- </tr>
-</table>
+    <label for="uname"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="uname" required>
 
-<button type="submit">Submit</button>
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+        
+    <button type="submit">Login</button>
     <label>
+      <input type="checkbox" checked="checked" name="remember"> Remember me
+    </label>
   </div>
 
   <div class="container" style="background-color:#f1f1f1">
     <button type="button" class="cancelbtn">Cancel</button>
     <span class="psw">Forgot <a href="#">password?</a></span>
-
-
   </div>
 </form>
 
