@@ -1,94 +1,104 @@
-<html>
+<!doctype html>
+<html lang="en">
+
 <head>
-<style>
-ul.tab{
-list-style-type: none;
-margin:0;
-padding:0;
-overflow:auto;
-background: #eee;
-border: 1px solid #ccc;
-}
-ul.tabb{
-list-style-type: none;
-margin:0;
-padding:0;
-overflow:auto;
-background: #eee;
-border: 1px solid #ccc;
-}
-ul li{
-float: left
-}
-ul a{
-display: inline-block;
-text-decoration:none;
-padding:20px;
-font-size:30px;
-font-weight:bold
-#color:000;
-} 
-ul a:hover, .active{
-color:#fff;
-background: green;
-}
-	a.download{
-	background-color: rgb(97, 185, 255);
-  color: white;
-  padding: 10px 15px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-}
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="icon" href="img/favicon.png" type="image/png">
+	<title>Lab 2</title>
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="vendors/linericon/style.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/magnific-popup.css">
+	<link rel="stylesheet" href="vendors/nice-select/css/nice-select.css">
+	<!-- main css -->
+	<link rel="stylesheet" href="css/style.css">
+	<link type = "text/css" rel= "stylesheet" href = "temp.css"/>
+</head>
 
-body {
-	background-image: url("aacc.jpg ");
-
-
-.content  {
-padding:20px;
-border: 1px solid #ccc;
-border-top:none;
-display:none;
-}
-
- </style>
- </head>
 <body>
-<br/>
-<br/>
-<center><img src = "header.png"/></center>
-<br/>
-<h3><center><a class="download" href="">Đăng nhập</a> </center></h3>
 
+	<!--================ Start Header Area =================-->
+	<header class="header_area">
+		<div class="main_menu">
+			<nav class="navbar navbar-expand-lg navbar-light">
+				<div class="container">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<a class="navbar-brand logo_h" href="index.html"><img src="img/logo.png" alt=""></a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+					 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+						<ul class="nav navbar-nav menu_nav justify-content-end">
+							<li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+							<li class="nav-item"><a class="nav-link" href="#">Lab1.html</a></li>
+							<li class="nav-item"><a class="nav-link" href="#">Lab 2</a></li>	
+                                   		        <li class="nav-item"><a class="nav-link" href="Lab3.html">Lab 3</a></li>
+							<li class="nav-item"><a class="nav-link" href="#">Lab 4</a></li>
+							<li class="nav-item"><a class="nav-link" href="#">Lab 5</a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</div>
+	</header>
+	<!--================ End Header Area =================-->
+
+
+    <!--================ Start Banner Area =================-->
+<br/>
+<br/>
+<br/>
+<br/>
 <ul class ="tab">
-<li> <a href = "#" class = "tab-link" onclick = "openTab(event,1)">Giới thiệu</a>
-<li> <a href = "#" class = "tab-link" onclick = "openTab(event,2)">Các khóa học</a>
-<li> <a href = "#" class = "tab-link" onclick = "openTab(event,3)">Học phí</a>
-<li> <a href = "#" class = "tab-link" onclick = "openTab(event,4)">Hỗ trợ</a>
+<li> <a href = "#" class = "tab-link" onclick = "openTab(event,1)">Requirements</a>
+<li> <a href = "#" class = "tab-link" onclick = "openTab(event,4)">User Scenario</a>
+<li> <a href = "#" class = "tab-link" onclick = "openTab(event,2)">Design</a>
+<li> <a href = "#" class = "tab-link" onclick = "openTab(event,3)">Implements</a>
 </ul>
-
-<div class = "content">
-</div>
-
-<div class = "content">
-<al>
-<h3><a class="download" href="" download="#">Lớp 10</a></h3>
+<<div class = "content">
+1./ Tạo ra một user scenario
 <br/>
-<h3><a class="download" href="" download="#">Lớp 11</a></h3>
+2./ Chọn 1 bước trong user scenario để thiết kế 1 form giao diện Web trên công cụ thiết kế đã chọn. Sau đó tạo ra file html tương ứng cho thiết kế này.
 <br/>
-<h3><a class="download" href="vatli12.html" >Lớp 12</a></h3>
-
-</al>
+3/ Upload lên azure/github: trong file html có chèn hình ảnh của user scenario ở (1) và đường dẫn của file thiết kế ở (2).
 </div>
 
 <div class = "content">
+	<h2>Design by paper:</h2>
+	<br/>
+	<img src = "demoFigmaLab2.jpg" height="1000" width="900"/>
+	<br/>
+	<a class="download" href="demoFigmaLab2.jpg" download="demoFigmaLab2.jpg">Download</a>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<h2>Design by Figma:</h2>
+	<br/>
+	<img src = "1122.png" height="1000" width="900"/>
+	<br/>
+	<a class="download" href="1122.png" download="1122.png">Download</a>
+		<br/>
+		<br/>
+		<br/>
+	<center><a class="download" href="AllLab2.rar" download="AllLab2.rar">Download All</a></center>
 </div>
 
 <div class = "content">
+<center><h1> <a href="Lab2.html">Click here</a></h1></center>
 </div>
-
+	
 <div class = "content">
+<img src = "userscenario.png"/>
+</div>
 </div>
 <script type = "text/javascript">
 	function openTab(e, tabId){
@@ -97,17 +107,48 @@ display:none;
 	for(i =0; i< tabContent.length;i++){
 		tabContent[i].style.display = 'none';
 }
-
 	tabContent[tabId - 1].style.display = 'block';
-
 	var tabLink = document.getElementsByClassName("tab-link");
 	for(i =0; i< tabLink.length;i++){
 		tabLink[i].className = tabLink[i].className.replace( 'active', '');
 }
-
 	event.currentTarget.className += ' active';
 	}
+document.getElementById("defaultOpen").click();
 </script>
-
+    
+    <!--================ End Banner Area =================-->
+	<!--================ Start Features Area =================-->
+	
+    <!--================ End Features Area =================-->
+	<!--================ Start Testimonial Area =================-->
+	
+    <!--================ End Testimonial Area =================-->
+    
+    <!--================ Start Newsletter Area =================-->
+    
+    <!--================ End Newsletter Area =================-->
+        
+        <!--================Footer Area =================-->
+	
+    <!--================End Footer Area =================-->
+    
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/stellar.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="vendors/nice-select/js/jquery.nice-select.min.js"></script>
+    <script src="vendors/isotope/imagesloaded.pkgd.min.js"></script>
+    <script src="vendors/isotope/isotope-min.js"></script>
+    <script src="vendors/owl-carousel/owl.carousel.min.js"></script>
+    <script src="js/jquery.ajaxchimp.min.js"></script>
+    <script src="js/mail-script.js"></script>
+    <!--gmaps Js-->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
+    <script src="js/gmaps.min.js"></script>
+    <script src="js/theme.js"></script>
 </body>
 </html>
