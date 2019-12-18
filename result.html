@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="icon" href="img/favicon.png" type="image/png">
+	<title>Lab 1</title>
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="vendors/linericon/style.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/magnific-popup.css">
+	<link rel="stylesheet" href="vendors/nice-select/css/nice-select.css">
+	<!-- main css -->
+	<link rel="stylesheet" href="css/style.css">
+	<link type = "text/css" rel= "stylesheet" href = "temp.css"/>
+</head>
+
+<body>
+
+	<!--================ Start Header Area =================-->
+	<header class="header_area">
+		<div class="main_menu">
+			<nav class="navbar navbar-expand-lg navbar-light">
+				<div class="container">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<a class="navbar-brand logo_h" href="index.html"><img src="img/logo.png" alt=""></a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+					 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+						<ul class="nav navbar-nav menu_nav justify-content-end">
+							<li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+							<li class="nav-item"><a class="nav-link" href="#">Lab 1</a></li>
+							<li class="nav-item"><a class="nav-link" href="Lab2.html">Lab 2</a></li>	
+                                   		        <li class="nav-item"><a class="nav-link" href="Lab3.html">Lab 3</a></li>
+							<li class="nav-item"><a class="nav-link" href="#">Lab 4</a></li>
+							<li class="nav-item"><a class="nav-link" href="result.html">Result</a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</div>
+	</header>
+	<!--================ End Header Area =================-->
+
+
+    <!--================ Start Banner Area =================-->
+<br/>
+<br/>
+<br/>
+<br/>
+<center><h2> Result</h2></center>
+<ul class ="tab">
+<li> <a  id="defaultOpen" href = "#" class = "tab-link" onclick = "openTab(event,1)"">Đánh giá</a>
+<li> <a href = "#" class = "tab-link" onclick = "openTab(event,2)">Kiến thức học được</a>
+
+</ul>
+
+<div class = "content">
+
+<p><b>Bài tập cá nhân</b><br>
+1.	Làm đầy đủ bài tập hàng tuần<br>		
+2.	Hoàn thành đúng hạn<br>		
+3.	Chỉnh sửa đúng yêu cầu<br>	
+4.	Tự chỉnh sửa từ template<br>
+<br>
+<b>Project và web nhóm </b><br>
+<a href="https://shopthoitrangpet.tk/product/sp3.html">Trang chi tiết sản phẩm</a><br>
+Cập nhật thông tin sản phẩm<br>
+Cập nhật thông tin study<br>
+<br>
+Hoàn thành: 90%<br>
+Đóng góp: 20%
+ </p>
+</div>
+
+<div class = "content">
+<p>
+1. Áp dụng được Input Controls, Navigation, Animations, Default Settings, Guided Actions.<br>
+2. Sử dụng mẫu Z-pattern và F-pattern trong thiết kế web.<br>
+3. Học được:HTML, CSS, Bootstrap, Javascript.<br>
+4. Thiết kế web bằng công cụ figma<br>
+5. Sử dụng màu, font chữ, kích cỡ chữ,... đúng cách.
+</p>
+</div>
+
+
+<script type = "text/javascript">
+	function openTab(e, tabId){
+	var i;
+	var tabContent = document.getElementsByClassName("content");
+	for(i =0; i< tabContent.length;i++){
+		tabContent[i].style.display = 'none';
+}
+
+	tabContent[tabId - 1].style.display = 'block';
+
+	var tabLink = document.getElementsByClassName("tab-link");
+	for(i =0; i< tabLink.length;i++){
+		tabLink[i].className = tabLink[i].className.replace( 'active', '');
+}
+
+	event.currentTarget.className += ' active';
+	}
+document.getElementById("defaultOpen").click();
+</script>
+
+    
+    <!--================ End Banner Area =================-->
+
+	<!--================ Start Features Area =================-->
+	
+    <!--================ End Features Area =================-->
+
+	<!--================ Start Testimonial Area =================-->
+	
+    <!--================ End Testimonial Area =================-->
+    
+    <!--================ Start Newsletter Area =================-->
+    
+    <!--================ End Newsletter Area =================-->
+        
+        <!--================Footer Area =================-->
+	
+    <!--================End Footer Area =================-->
+    
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/stellar.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="vendors/nice-select/js/jquery.nice-select.min.js"></script>
+    <script src="vendors/isotope/imagesloaded.pkgd.min.js"></script>
+    <script src="vendors/isotope/isotope-min.js"></script>
+    <script src="vendors/owl-carousel/owl.carousel.min.js"></script>
+    <script src="js/jquery.ajaxchimp.min.js"></script>
+    <script src="js/mail-script.js"></script>
+    <!--gmaps Js-->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
+    <script src="js/gmaps.min.js"></script>
+    <script src="js/theme.js"></script>
+</body>
+
+</html>
